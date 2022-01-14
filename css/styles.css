@@ -17,8 +17,18 @@
 
 body > section > div {
   position: absolute;
-  background-color: red;
+
   top: 65%;
   left: 68%;
   transform: translate(-50%,-50%);
+  
 }
+
+.intro-btn {
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+
+
