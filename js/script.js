@@ -42,4 +42,17 @@ $(document).ready(function(){
 
 
     totalCost = originalPrice + pizzaToppings + pizzaCrust
+
+    function delivery() {
+        if($("#delivery").is("checked".true)){
+          let dropOff = prompt("Enter DropOff Location")
+          totalCost = originalPrice + pizzaToppings + pizzaCrust + deliveryCost;
+          document.getElementById("formOutPut").innerHTML = `Your Total Amount is Ksh.${totalCost} and the Drop off point is ${dropOff}`
+
+        } else {
+          document.getElementById("formOutPut").innerHtml = `Your Total is Ksh.${totalCost} it will be ready in the next 15 minutes`
+        }
+    }
+
+    delivery()
 })
