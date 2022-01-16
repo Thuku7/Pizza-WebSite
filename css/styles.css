@@ -12,10 +12,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -1;
 }
 
 
-body > section > div {
+.intro-text {
   position: absolute;
 
   top: 65%;
@@ -29,6 +30,16 @@ body > section > div {
   text-align: center;
 }
 
+.container {
+  height:100vh;
+}
 
 
+body > section.menu.container{
+  display: flex;
+}
+
+.card {
+  height: 400px;
+}
 
