@@ -24,4 +24,17 @@ $(document).ready(function(){
       
       
     })
+
+    //collecting user input
+
+    let pizzaType = $("select#type").val()
+    let pizzaSize = $("select#size").val()
+    let pizzaToppings = $("select#toppings").val()
+    let pizzaCrust = $("select#crust").val()
+    let pizzaPieces = $("input#numbers").val()
+    let inhouse = $("input#inhouse").value
+
+
+    
+
 })
