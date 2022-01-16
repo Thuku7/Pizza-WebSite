@@ -6,3 +6,14 @@ class Pizza {
     this.crust = crust
 }
 }
+
+
+$(document).ready(function(){
+
+
+    $("#form").submit(function(event){
+      event.preventDefault()
+
+      
+    })
+})
