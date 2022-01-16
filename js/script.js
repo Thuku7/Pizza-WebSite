@@ -14,7 +14,7 @@ $(document).ready(function(){
     $("#form").submit(function(event){
       event.preventDefault()
 
-      let PizzaPrices = {
+      let pizzaPrices = {
         small : 500,
         medium: 700,
         Large: 1000
@@ -35,6 +35,11 @@ $(document).ready(function(){
     let inhouse = $("input#inhouse").value
 
 
-    
+    let pizza1 = new Pizza(pizzaType,pizzaSize,pizzaToppings,pizzaCrust);
+    originalPrice = pizzaPrices[pizza1.size]
+    toppingPrice = originalPrice / 50;
+    crustPrice = originalPrice * 2;
 
+
+    totalCost = originalPrice + pizzaToppings + pizzaCrust
 })
