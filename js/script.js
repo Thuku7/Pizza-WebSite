@@ -42,5 +42,20 @@ $(document).ready(function(){
     crustCost = originalPrice * 0.4,
     toppingCost = originalPrice * 0.2;
     let totalCost = originalPrice + toppingCost + crustCost;
+
+
+
+
+    function Service(){
+        if($("inHouse").is("checked",false)){
+          document.getElementById("formOutPut").innerHTML = `your Order will be ready in 20 minutes.Total cost is Ksh.${totalCost}`
+        } else {
+          let totalCost = originalPrice + toppingCost + crustCost + deliveryCost;
+          let dropOff = prompt("Enter DropOff location")
+          document.getElementById("formOutPut").innerHTML = `Your Delivery will be arriving is 20 minutes at ${dropOff}.Total cost Ksh.${totalCost}`
+        }
+    }
+
+    Service();
   })
 })
