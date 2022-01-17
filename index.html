@@ -12,7 +12,7 @@
     <title>Yum Pizza</title>
   </head>
   <body>
-    <section class="landingPage">
+    <section class="landingPage" id="landing">
       <nav class="navbar  fixed-top navbar-expand-lg ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Yum Pizza</a>
@@ -22,16 +22,16 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#landing">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#myMenu">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#orderMore">Order</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ">Disabled</a>
+                <a class="nav-link" href="">contact</a>
               </li>
             </ul>
           </div>
@@ -42,12 +42,13 @@
           <h2>Quality and Satisfaction</h2>
         </div>
         <div class="intro-btn">
-          <button>Place Your Order</button>
+          <button type="button" class="btn btn-primary btn-lg" href="#orderMore">Place Your Order</button>
+
         </div>
       </div>
     </section>
     
-    <section class="menu container">
+    <section class="menu container" id="myMenu">
       <div class="row">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
@@ -91,7 +92,7 @@
     </section>
 
 
-    <section class="order">
+    <section class="order" id="orderMore">
       <div class="order-container">
         <div class="row">  
           <form  action="#" id="form">
