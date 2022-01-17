@@ -47,7 +47,7 @@ $(document).ready(function(){
 
 
     function Service(){
-        if($("inHouse").is("checked",false)){
+        if($("inHouse").is("checked", true)){
           document.getElementById("formOutPut").innerHTML = `your Order will be ready in 20 minutes.Total cost is Ksh.${totalCost}`
         } else {
           let totalCost = originalPrice + toppingCost + crustCost + deliveryCost;
