@@ -34,6 +34,13 @@ $(document).ready(function(){
       small:500,
     }
 
-    
+    let pizza1 = new Pizza(pizzaType,pizzaSize,pizzaToppings,pizzaCrust)
+
+    let Size1 = pizza1.size,
+    originalPrice = Prices[Size1],
+    deliveryCost = 500,
+    crustCost = originalPrice * 0.4,
+    toppingCost = originalPrice * 0.2;
+    let totalCost = originalPrice + toppingCost + crustCost;
   })
 })
