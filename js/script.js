@@ -1,4 +1,4 @@
-
+//business logic
 class Pizza {
 
 
@@ -11,6 +11,8 @@ class Pizza {
 }
 
 
+
+// UI logic
 $(document).ready(function(){
 
 
